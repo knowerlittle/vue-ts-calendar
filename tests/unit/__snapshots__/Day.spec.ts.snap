@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Day matches snapshot when the calculation for applying the grid-area numbers for the inline styles are correct 1`] = `
+<div class="date
+    false
+    false
+    false
+    false
+    " style="grid-area: 4 / 5;">
+  <div tabindex="0" class="innerDate">
+    <p>
+      20
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Day matches snapshot when the cases are false for class names 1`] = `
+<div class="date
+    false
+    false
+    false
+    false
+    " style="grid-area: 1 / 4;">
+  <div tabindex="0" class="innerDate">
+    <p>
+      1
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Day matches snapshot when the cases are true for class names 1`] = `
+<div class="date
+    disabled
+    isStartDate
+    isEndDate
+    isBetween
+    " style="grid-area: 1 / 5;">
+  <div tabindex="0" class="innerDate">
+    <p>
+      1
+    </p>
+  </div>
+</div>
+`;

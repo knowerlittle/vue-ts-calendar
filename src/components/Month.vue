@@ -182,10 +182,6 @@ export default class Month extends Vue {
     return 8 - this.dates[0].weekDay()
   }
 
-  get isCurrentMonth () {
-    return this.currentDate.month - 1 === this.selectingMonth
-  }
-
   get disablePrevious () {
     return this.maximumSelectionRange.isAfter(this.viewingDate.plus({ months: -1 }))
   }
@@ -216,6 +212,8 @@ export default class Month extends Vue {
 </script>
 
 <style lang="scss" module>
+  $month-font-size: 20px;
+
   .month {
     box-sizing: border-box;
     padding: 1px;
@@ -246,7 +244,7 @@ export default class Month extends Vue {
     }
 
     &__navigation-name {
-      font-size: 20px;
+      font-size: $month-font-size;
       color: black;
       grid-column: 2 / 7;
 

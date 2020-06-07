@@ -27,7 +27,7 @@ export default class App extends Vue {}
 }
 
 h1 {
-  font: 100px Helvetica, Sans-Serif;
-  letter-spacing: -5px;
+  font: 50px Helvetica, Sans-Serif;
+  letter-spacing: -4px;
 }
 </style>

@@ -188,6 +188,11 @@ export default class Calendar extends Vue {
       this.emitDate()
     }
 
+    @Watch('viewType')
+    onViewTypeChange () {
+      this.monthOffset = 0
+    }
+
     /**
      * Emits selected date
      * @type {Object}
@@ -241,6 +246,7 @@ export default class Calendar extends Vue {
 </script>
 
 <style lang="scss" module>
+  $infinite-view-margin-bottom: 50px;
 
   .calendar {
     &__flex {
@@ -248,12 +254,13 @@ export default class Calendar extends Vue {
     }
 
     &__divider {
+      height: 100%;
       border-left: 8px solid white;
       border-right: 4px solid white;
     }
 
     &--infinite {
-      margin-bottom: 25px;
+      margin-bottom: $infinite-view-margin-bottom;
     }
   }
 </style>

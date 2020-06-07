@@ -154,4 +154,23 @@ describe('Calendar', () => {
 
     expect(wrapper.vm.$data.monthOffset).toEqual(1)
   })
+
+  it('resets month offset when viewType changes', async () => {
+    const options = {
+      propsData: {
+        viewType: 'single',
+        maxDate: '2020/12/20'
+      }
+    }
+    const wrapper = factory(options)
+    wrapper.setData({ monthOffset: 5 })
+    // @ts-ignore
+    expect(wrapper.vm.monthOffset).toEqual(5)
+
+    wrapper.setProps({ viewType: 'infinite' })
+    await wrapper.vm.$nextTick()
+
+    // @ts-ignore
+    expect(wrapper.vm.monthOffset).toEqual(0)
+  })
 })

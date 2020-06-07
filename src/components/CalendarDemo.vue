@@ -2,8 +2,7 @@
   <div class="demo">
     <div class="demo__wrapper">
       <div class="demo__options">
-        <h2>Calendar Type</h2>
-
+        <h3>Calendar Type</h3>
         <div
           v-for="(viewType, key) in viewTypes"
           :key="key"
@@ -20,7 +19,7 @@
           </label>
         </div>
 
-        <h2>Selection Type</h2>
+        <h3>Selection Type</h3>
         <input
           type="radio"
           id="rangeSelectionTypeTrue"
@@ -28,9 +27,8 @@
           :value="true"
           v-model="isRange"
         >
-        <label for="rangeSelectionTypeTrue">
-          Range
-        </label>
+        <label for="rangeSelectionTypeTrue">Range</label>
+
         <input
           type="radio"
           id="rangeSelectionTypeFalse"
@@ -38,26 +36,22 @@
           :value="false"
           v-model="isRange"
         >
-        <label for="rangeSelectionTypeFalse">
-          Single
-        </label>
+        <label for="rangeSelectionTypeFalse">Single</label>
 
-        <h2>Max Date</h2>
+        <h3>Max Date</h3>
         <p>{{ formattedEndDate }}</p>
 
-        <h2>Selection</h2>
+        <h3>Selection</h3>
         <p>{{ selectedDate.label }}</p>
       </div>
 
       <div class="demo__calendar-wrapper">
-
         <Calendar
           class="demo__calendar"
           :class="selectedViewType"
           :maxDate="maxEndDate"
           :viewType="selectedViewType"
           :isRangeSelection="isRange"
-          dateFormat="yyyy-MM-dd"
           @dateSelection="handleDateSelection"
         />
       </div>
@@ -104,15 +98,21 @@ export default class CalendarDemo extends Vue {
 </script>
 
 <style lang="scss">
+  $default-padding: 25px;
+  $dual-view-max-height: 800px;
+  $single-view-max-width: 500px;
+  $infinite-view-height: 700px;
+  $infinite-view-width: 400px;
+
   .demo {
     &__wrapper {
-      padding: 25px;
+      padding: $default-padding;
       display: flex;
     }
 
     &__options {
       text-align: left;
-      padding: 25px;
+      padding: $default-padding;
       box-sizing: border-box;
       width: 20vw;
     }
@@ -127,25 +127,25 @@ export default class CalendarDemo extends Vue {
       box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
       box-sizing: border-box;
       border: 1px solid lightgray;
-      border-radius: 25px;
+      border-radius: $default-padding;
       width: 70vw;
+
+      &.dual {
+        padding: $default-padding;
+        max-height: $dual-view-max-height;
+      }
+
+      &.single {
+        padding: $default-padding;
+        max-width: $single-view-max-width;
+      }
+
+      &.infinite {
+        padding: 0 $default-padding;
+        width: $infinite-view-width;
+        height: $infinite-view-height;
+        overflow: scroll;
+      }
     }
-  }
-
-  .dual {
-    padding: 25px;
-    max-height: 800px;
-  }
-
-  .single {
-    padding: 25px;
-    max-width: 500px;
-  }
-
-  .infinite {
-    padding: 0 25px;
-    width: 400px;
-    height: 700px;
-    overflow: scroll;
   }
 </style>

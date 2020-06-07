@@ -1,5 +1,5 @@
 export type SelectedDate = {
-  fromDate: string;
-  toDate: string ;
-  label: string | undefined
+  fromDate: string
+  toDate: string
+  label: string
 }

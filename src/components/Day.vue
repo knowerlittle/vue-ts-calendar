@@ -69,7 +69,6 @@ export default class Day extends Vue {
   .date {
     position: relative;
     padding-bottom: 100%;
-    z-index: 2;
 
     p {
       color: black;
@@ -80,7 +79,6 @@ export default class Day extends Vue {
       outline: none;
       cursor: pointer;
       background-color: lightgray;
-      z-index: 20;
 
       p {
         color: black;

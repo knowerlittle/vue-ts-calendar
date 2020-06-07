@@ -1,6 +1,9 @@
 <template>
   <div :class="$style.calendar">
-    <div v-if="isInfiniteScroll">
+    <div
+      v-if="isInfiniteScroll"
+      :class="$style['calendar--infinite']"
+    >
       <DayOfWeekNames
         :dayNames="dayNames"
         :sticky="true"
@@ -17,6 +20,7 @@
         :monthAlignRight="true"
         :currentSelectionRange="currentSelectionRange"
         :maximumSelectionRange="maximumSelectionRange"
+        :isInfinite="isInfiniteScroll"
         @selectDate="selectDate"
         @changeMonth="updateMonth"
       />
@@ -60,37 +64,30 @@
 </template>
 
 <script lang="ts">
-  import { DateTime, Interval } from "luxon"
-  import { Component, Vue, Prop, Provide, Watch } from "vue-property-decorator"
+import { DateTime, Interval } from 'luxon'
+import { Component, Vue, Prop, Provide, Watch } from 'vue-property-decorator'
 
-  import Month from "@/components/Month.vue"
-  import DayOfWeekNames from "@/components/DayOfWeekNames.vue"
-  import CalendarDate from "@/services/CalendarDate"
+import Month from '@/components/Month.vue'
+import DayOfWeekNames from '@/components/DayOfWeekNames.vue'
+import CalendarDate from '@/services/CalendarDate'
 
-  import { ViewType, monthNamesFallback, dayNamesFallback } from "@/helpers"
+import { ViewType, monthNamesFallback, dayNamesFallback } from '@/helpers'
 
-  const currentDate = DateTime.local()
+const currentDate = DateTime.local()
 
   @Component({
-    name: "Calendar",
+    name: 'Calendar',
     components: {
       Month,
       DayOfWeekNames
     }
   })
-  export default class Calendar extends Vue {
-
+export default class Calendar extends Vue {
     /**
      * Provides current date to all child components
      * @private
      */
     @Provide() currentDate = currentDate
-
-    /**
-     * Provides isInfinite to all child components
-     * @private
-     */
-    @Provide() isInfinite = this.isInfiniteScroll
 
     /**
      * Name of months
@@ -113,7 +110,7 @@
      */
     @Prop({
       required: true,
-      validator: value => Object.values(ViewType).includes(value),
+      validator: value => Object.values(ViewType).includes(value)
     })
     readonly viewType!: string
 
@@ -135,13 +132,11 @@
     @Prop({ default: '' })
     readonly dateFormat!: string
 
-
-
     $style: any
 
     startDate: DateTime | null = null
     endDate: DateTime | null = null
-    monthOffset: number = 0
+    monthOffset = 0
 
     get isSingleView () {
       return this.viewType === ViewType.Single
@@ -189,7 +184,7 @@
     }
 
     @Watch('endDate')
-    onEndDateChange() {
+    onEndDateChange () {
       this.emitDate()
     }
 
@@ -197,7 +192,7 @@
      * Emits selected date
      * @type {Object}
      */
-    private emitDate ()  {
+    private emitDate () {
       if (this.startDate && this.endDate) {
         const selectedDates = {
           fromDate: this.dateFormat
@@ -233,7 +228,7 @@
         !this.isRangeSelection ||
         this.currentSelectionRange && this.currentSelectionRange.isAfter(date.luxon) ||
         this.startDate && this.endDate && !this.startDate.hasSame(this.endDate, 'day')
-      ){
+      ) {
         this.startDate = date.luxon
       }
       this.endDate = date.luxon
@@ -242,7 +237,7 @@
     updateMonth (value: number) {
       this.monthOffset = this.monthOffset + value
     }
-  }
+}
 </script>
 
 <style lang="scss" module>
@@ -255,6 +250,10 @@
     &__divider {
       border-left: 8px solid white;
       border-right: 4px solid white;
+    }
+
+    &--infinite {
+      margin-bottom: 25px;
     }
   }
 </style>

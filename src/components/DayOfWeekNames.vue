@@ -12,29 +12,29 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue, Prop } from "vue-property-decorator"
+import { Component, Vue, Prop } from 'vue-property-decorator'
 
-  @Component({ name: "DayOfWeekNames" })
-  export default class DayOfWeekNames extends Vue {
+@Component({ name: 'DayOfWeekNames' })
+export default class DayOfWeekNames extends Vue {
+  /**
+   * Name of days
+   */
+  @Prop({ required: true })
+  readonly dayNames!: string[]
 
-    /**
-     * Name of days
-     */
-    @Prop({ required: true })
-    readonly dayNames!: string[]
+  /**
+   * Make the names sticky
+   */
+  @Prop({ default: false })
+  readonly sticky!: boolean
 
-    /**
-     * Make the names sticky
-     */
-    @Prop({ default: false })
-    readonly sticky!: boolean
-
-    $style: any
-  }
+  $style: any
+}
 </script>
 
 <style lang="scss" module>
   .weekday {
+    padding-top: 10px;
     background-color: white;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -42,7 +42,7 @@
     &.sticky {
       position: sticky;
       top: 0;
-      z-index: 5;
+      z-index: 1000;
     }
 
     &__names {

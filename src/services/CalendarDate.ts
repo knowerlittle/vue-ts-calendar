@@ -45,9 +45,9 @@ export default class CalendarDate {
   }
 
   isDisabled () {
-    return this.maxInterval.isBefore(this.luxon)
-      || this.maxInterval.isAfter(this.luxon)
-      || !this.maxInterval.contains(this.luxon)
+    return this.maxInterval.isBefore(this.luxon) ||
+      this.maxInterval.isAfter(this.luxon) ||
+      !this.maxInterval.contains(this.luxon)
   }
 
   weekDay () {

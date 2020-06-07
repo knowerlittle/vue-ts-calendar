@@ -176,11 +176,7 @@ export default class Calendar extends Vue {
     }
 
     get monthsTillMaxDate () {
-      const numberOfMonths = Math.ceil(this.maximumDate.diff(currentDate, 'months').months)
-
-      return this.maximumDate.day > this.currentDate.day
-        ? numberOfMonths
-        : numberOfMonths + 1
+      return Math.ceil(this.maximumDate.diff(currentDate, 'months').months)
     }
 
     @Watch('endDate')

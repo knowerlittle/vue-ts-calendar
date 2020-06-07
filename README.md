@@ -23,7 +23,7 @@ Selection Otpions include:
 ![Single View](https://i.imgur.com/Na4BH4N.png)
 
 #### Infinite View
-![Infinite View](https://i.imgur.com/wNU7hna.png)
+![Infinite View](https://i.imgur.com/f1lOrrG.png)
 
 ## Project setup
 ```

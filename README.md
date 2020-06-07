@@ -1,5 +1,30 @@
 # vue-ts-calendar
 
+[View Demo](https://vue-ts-calendar.netlify.app/)
+
+A Calendar built with Vue.js using TypeScript and vue-property-decorator
+
+Calendar Options include:
+* Dual View (Default)
+* Single View
+* Infinite view
+
+Selection Otpions include:
+* Range (Default)
+* Single
+
+
+## Images
+
+#### Dual View
+![Dual View](https://i.imgur.com/YqV9vXE.png)
+
+#### Single View
+![Single View](https://i.imgur.com/Na4BH4N.png)
+
+#### Infinite View
+![Infinite View](https://i.imgur.com/wNU7hna.png)
+
 ## Project setup
 ```
 yarn install
@@ -20,15 +45,8 @@ yarn build
 yarn test:unit
 ```
 
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
-
 ### Lints and fixes files
 ```
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

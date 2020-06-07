@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar matches snapshot when it is single view 1`] = `
+<div>
+  <div class="">
+    <month-stub showdaynames="true" maximumselectionrange="[object Object]" showpreviousmonth="true" shownextmonth="true" offsetamount="1" monthoffset="0" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Calendar when it is dual view 1`] = `
+<div>
+  <div class="calendar__flex">
+    <month-stub showdaynames="true" maximumselectionrange="[object Object]" showpreviousmonth="true" offsetamount="2" monthoffset="0" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+    <div class="calendar__divider"></div>
+    <month-stub showdaynames="true" maximumselectionrange="[object Object]" shownextmonth="true" offsetamount="2" monthoffset="1" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+  </div>
+</div>
+`;
+
+exports[`Calendar when it is infinite view 1`] = `
+<div>
+  <div>
+    <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun" sticky="true"></dayofweeknames-stub>
+    <month-stub maximumselectionrange="[object Object]" offsetamount="1" monthoffset="0" monthalignright="true" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+    <month-stub maximumselectionrange="[object Object]" offsetamount="1" monthoffset="1" monthalignright="true" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+    <month-stub maximumselectionrange="[object Object]" offsetamount="1" monthoffset="2" monthalignright="true" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+    <month-stub maximumselectionrange="[object Object]" offsetamount="1" monthoffset="3" monthalignright="true" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+    <month-stub maximumselectionrange="[object Object]" offsetamount="1" monthoffset="4" monthalignright="true" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+    <month-stub maximumselectionrange="[object Object]" offsetamount="1" monthoffset="5" monthalignright="true" monthnames="January,February,March,April,May,June,July,August,September,October,November,December" daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></month-stub>
+  </div>
+</div>
+`;

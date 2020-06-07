@@ -5,7 +5,7 @@
   >
     <div
       tabindex="0"
-      :class="$style.innerDate"
+      :class="$style['innerDate']"
       @click="emitClickDate"
       @keydown.enter="emitClickDate"
     >

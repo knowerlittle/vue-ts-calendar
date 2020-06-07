@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Month matches snapshot when both month navigations are disabled 1`] = `
+<div class="month">
+  <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></dayofweeknames-stub>
+  <div class="month__navigation"><button tabindex="0" disabled="disabled" class="month__navigation-left">
+      [&lt;]
+    </button>
+    <p tabindex="0" class="month__navigation-name">
+      February 2020
+    </p> <button disabled="disabled" tabindex="0" class="month__navigation-right">
+      [&gt;]
+    </button>
+  </div>
+  <div class="month__days month__days-wrapper">
+    <day-stub date="[object Object]" firstsaturdaydate="NaN"></day-stub>
+  </div>
+</div>
+`;
+
+exports[`Month matches snapshot when isInfinite is true 1`] = `
+<div class="month">
+  <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></dayofweeknames-stub>
+  <div class="month__navigation"><button tabindex="0" class="month__navigation-left">
+      [&lt;]
+    </button>
+    <p tabindex="0" class="month__navigation-name">
+      February 2020
+    </p> <button tabindex="0" class="month__navigation-right">
+      [&gt;]
+    </button>
+  </div>
+  <div class="month__days">
+    <day-stub date="[object Object]" firstsaturdaydate="NaN"></day-stub>
+  </div>
+</div>
+`;
+
+exports[`Month matches snapshot when month align rights and there are no month navigations 1`] = `
+<div class="month">
+  <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></dayofweeknames-stub>
+  <div class="month__navigation">
+    <!---->
+    <p tabindex="0" class="month__navigation-name align-right">
+      February 2020
+    </p>
+    <!---->
+  </div>
+  <div class="month__days month__days-wrapper">
+    <day-stub date="[object Object]" firstsaturdaydate="NaN"></day-stub>
+  </div>
+</div>
+`;
+
+exports[`Month matches snapshot when there are no names of weeks 1`] = `
+<div class="month">
+  <!---->
+  <div class="month__navigation"><button tabindex="0" class="month__navigation-left">
+      [&lt;]
+    </button>
+    <p tabindex="0" class="month__navigation-name">
+      February 2020
+    </p> <button tabindex="0" class="month__navigation-right">
+      [&gt;]
+    </button>
+  </div>
+  <div class="month__days month__days-wrapper">
+    <day-stub date="[object Object]" firstsaturdaydate="NaN"></day-stub>
+  </div>
+</div>
+`;
+
+exports[`Month matches snapshot with default cases 1`] = `
+<div class="month">
+  <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></dayofweeknames-stub>
+  <div class="month__navigation"><button tabindex="0" class="month__navigation-left">
+      [&lt;]
+    </button>
+    <p tabindex="0" class="month__navigation-name">
+      February 2020
+    </p> <button tabindex="0" class="month__navigation-right">
+      [&gt;]
+    </button>
+  </div>
+  <div class="month__days month__days-wrapper">
+    <day-stub date="[object Object]" firstsaturdaydate="NaN"></day-stub>
+  </div>
+</div>
+`;

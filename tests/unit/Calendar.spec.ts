@@ -2,7 +2,7 @@ import { shallowMount } from '@vue/test-utils'
 import { DateTime } from 'luxon'
 import Calendar from '@/components/Calendar.vue'
 
-// TODO: extract out to a seperate __mocks__ folders; couldn't figure out how
+// TODO: extract out to a separate __mocks__ folders; couldn't figure out how
 jest.mock('luxon', () => {
   const mockLuxon = {
     toISO: jest.fn().mockReturnValue('22 2020'),

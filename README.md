@@ -1,15 +1,17 @@
 # vue-ts-calendar
 
+<img src="https://i.imgur.com/WqTJJNj.png" width="48">
+
 [View Demo](https://vue-ts-calendar.netlify.app/)
 
 A Calendar built with Vue.js using TypeScript and vue-property-decorator
 
-Calendar Options include:
+Calendar Types:
 * Dual View (Default)
 * Single View
 * Infinite view
 
-Selection Otpions include:
+Selection Types:
 * Range (Default)
 * Single
 
@@ -17,13 +19,13 @@ Selection Otpions include:
 ## Images
 
 #### Dual View
-![Dual View](https://i.imgur.com/YqV9vXE.png)
+![Dual View](https://i.imgur.com/RIq2KPF.png)
 
 #### Single View
-![Single View](https://i.imgur.com/Na4BH4N.png)
+![Single View](https://i.imgur.com/WO74s9b.png)
 
 #### Infinite View
-![Infinite View](https://i.imgur.com/f1lOrrG.png)
+![Infinite View](https://i.imgur.com/5DG01Kg.png)
 
 ## Project setup
 ```

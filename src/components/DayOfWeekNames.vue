@@ -4,7 +4,6 @@
       v-for="dayName in dayNames"
       :key="dayName"
       :class="$style['weekday__names']"
-      tabindex="0"
     >
       {{ dayName }}
     </p>

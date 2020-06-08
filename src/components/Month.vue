@@ -10,10 +10,8 @@
       <button
         v-if="showPreviousMonth"
         :class="$style['month__navigation-left']"
-        tabindex="0"
         :disabled="disablePrevious"
         @click="changeMonth(offsetAmount * -1)"
-        @keydown.enter="changeMonth(offsetAmount * -1)"
       >
         Prev
       </button>
@@ -23,7 +21,6 @@
           $style['month__navigation-name'], {[
           $style['align-right']]: monthAlignRight
         }]"
-        tabindex="0"
       >
         {{ selectedMonth }} {{ selectedYear }}
       </p>
@@ -32,9 +29,7 @@
         v-if="showNextMonth"
         :class="$style['month__navigation-right']"
         :disabled="disableNext"
-        tabindex="0"
         @click="changeMonth(offsetAmount)"
-        @keydown.enter="changeMonth(offsetAmount)"
       >
         Next
       </button>

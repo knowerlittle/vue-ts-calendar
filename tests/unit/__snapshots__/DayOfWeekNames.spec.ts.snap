@@ -2,25 +2,25 @@
 
 exports[`DayOfWeekNames matches snapshot matches when header is not sticky 1`] = `
 <div class="weekday">
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Mon
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Tues
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Wed
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Thu
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Fri
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Sat
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Sun
   </p>
 </div>
@@ -28,25 +28,25 @@ exports[`DayOfWeekNames matches snapshot matches when header is not sticky 1`] =
 
 exports[`DayOfWeekNames matches snapshot matches when header is sticky 1`] = `
 <div class="weekday sticky">
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Mon
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Tues
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Wed
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Thu
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Fri
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Sat
   </p>
-  <p tabindex="0" class="weekday__names">
+  <p class="weekday__names">
     Sun
   </p>
 </div>

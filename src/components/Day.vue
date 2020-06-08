@@ -4,10 +4,8 @@
     :style="style"
   >
     <div
-      tabindex="0"
       :class="$style['innerDate']"
       @click="emitClickDate"
-      @keydown.enter="emitClickDate"
     >
       <p>
         {{ date.date }}

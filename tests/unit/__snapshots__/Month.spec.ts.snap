@@ -3,12 +3,12 @@
 exports[`Month matches snapshot when both month navigations are disabled 1`] = `
 <div class="month">
   <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></dayofweeknames-stub>
-  <div class="month__navigation"><button tabindex="0" disabled="disabled" class="month__navigation-left">
+  <div class="month__navigation"><button disabled="disabled" class="month__navigation-left">
       Prev
     </button>
-    <p tabindex="0" class="month__navigation-name">
+    <p class="month__navigation-name">
       February 2020
-    </p> <button disabled="disabled" tabindex="0" class="month__navigation-right">
+    </p> <button disabled="disabled" class="month__navigation-right">
       Next
     </button>
   </div>
@@ -21,12 +21,12 @@ exports[`Month matches snapshot when both month navigations are disabled 1`] = `
 exports[`Month matches snapshot when isInfinite is true 1`] = `
 <div class="month">
   <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></dayofweeknames-stub>
-  <div class="month__navigation"><button tabindex="0" class="month__navigation-left">
+  <div class="month__navigation"><button class="month__navigation-left">
       Prev
     </button>
-    <p tabindex="0" class="month__navigation-name">
+    <p class="month__navigation-name">
       February 2020
-    </p> <button tabindex="0" class="month__navigation-right">
+    </p> <button class="month__navigation-right">
       Next
     </button>
   </div>
@@ -41,7 +41,7 @@ exports[`Month matches snapshot when month align rights and there are no month n
   <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></dayofweeknames-stub>
   <div class="month__navigation">
     <!---->
-    <p tabindex="0" class="month__navigation-name align-right">
+    <p class="month__navigation-name align-right">
       February 2020
     </p>
     <!---->
@@ -55,12 +55,12 @@ exports[`Month matches snapshot when month align rights and there are no month n
 exports[`Month matches snapshot when there are no names of weeks 1`] = `
 <div class="month">
   <!---->
-  <div class="month__navigation"><button tabindex="0" class="month__navigation-left">
+  <div class="month__navigation"><button class="month__navigation-left">
       Prev
     </button>
-    <p tabindex="0" class="month__navigation-name">
+    <p class="month__navigation-name">
       February 2020
-    </p> <button tabindex="0" class="month__navigation-right">
+    </p> <button class="month__navigation-right">
       Next
     </button>
   </div>
@@ -73,12 +73,12 @@ exports[`Month matches snapshot when there are no names of weeks 1`] = `
 exports[`Month matches snapshot with default cases 1`] = `
 <div class="month">
   <dayofweeknames-stub daynames="Mon,Tues,Wed,Thu,Fri,Sat,Sun"></dayofweeknames-stub>
-  <div class="month__navigation"><button tabindex="0" class="month__navigation-left">
+  <div class="month__navigation"><button class="month__navigation-left">
       Prev
     </button>
-    <p tabindex="0" class="month__navigation-name">
+    <p class="month__navigation-name">
       February 2020
-    </p> <button tabindex="0" class="month__navigation-right">
+    </p> <button class="month__navigation-right">
       Next
     </button>
   </div>

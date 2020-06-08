@@ -34,7 +34,7 @@
         :disabled="disableNext"
         tabindex="0"
         @click="changeMonth(offsetAmount)"
-        @keydown.enter="changeMonth(offsetAmount * -1)"
+        @keydown.enter="changeMonth(offsetAmount)"
       >
         Next
       </button>

@@ -99,7 +99,6 @@ export default class CalendarDemo extends Vue {
 
 <style lang="scss">
   $default-padding: 25px;
-  $dual-view-max-height: 800px;
   $single-view-max-width: 500px;
   $infinite-view-height: 700px;
   $infinite-view-width: 400px;
@@ -132,7 +131,6 @@ export default class CalendarDemo extends Vue {
 
       &.dual {
         padding: $default-padding;
-        max-height: $dual-view-max-height;
       }
 
       &.single {

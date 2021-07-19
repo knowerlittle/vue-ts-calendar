@@ -1,8 +1,8 @@
-# vue-ts-calendar
+# vue-ts-calendar [View Demo Here](https://vue-ts-calendar.netlify.app/)
 
 <img src="https://i.imgur.com/WqTJJNj.png" width="48">
 
-[View Demo](https://vue-ts-calendar.netlify.app/)
+
 
 A Calendar built with Vue.js using TypeScript and vue-property-decorator
 

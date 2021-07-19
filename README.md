@@ -1,5 +1,6 @@
-# vue-ts-calendar [View Demo Here](https://vue-ts-calendar.netlify.app/)
+# vue-ts-calendar
 
+##  [Click here for demo](https://vue-ts-calendar.netlify.app/)
 <img src="https://i.imgur.com/WqTJJNj.png" width="48">
 
 
